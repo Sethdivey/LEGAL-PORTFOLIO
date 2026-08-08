@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exhibit B — Contract Review & Redline | Divey Seth, Legal Portfolio</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600;700&display=swap');
+
+  :root {
+    --paper: #f7f5f0;
+    --ink: #1c1c1a;
+    --ink-soft: #4a4a45;
+    --rule: #c9c4b8;
+    --stamp: #8a2e2e;
+    --flag: #b5451f;
+    --fix: #2e6b4f;
+    --margin-note: #6b6558;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #e9e6de; font-family: 'IBM Plex Serif', serif; color: var(--ink); }
+
+  .docket-header {
+    background: var(--ink); color: var(--paper); font-family: 'IBM Plex Mono', monospace;
+    padding: 18px 24px; display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 8px; font-size: 13px; letter-spacing: 0.04em;
+  }
+
+  .sheet {
+    max-width: 900px; margin: 40px auto 80px; background: var(--paper);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15), 0 12px 40px rgba(0,0,0,0.12);
+    padding: 64px 64px 80px; position: relative;
+  }
+
+  .exhibit-tag {
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--margin-note); border: 1px solid var(--rule);
+    display: inline-block; padding: 4px 10px; margin-bottom: 28px;
+  }
+
+  .caption {
+    font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: var(--ink-soft);
+    line-height: 1.6; border-left: 3px solid var(--stamp); padding: 12px 18px;
+    margin: 0 0 40px; background: rgba(138,46,46,0.04);
+  }
+  .caption strong { color: var(--ink); }
+
+  h1.doc-title { text-align: center; font-size: 22px; letter-spacing: 0.04em; margin: 0 0 8px; font-weight: 700; }
+  h2.doc-sub { text-align: center; font-size: 14px; font-weight: 400; color: var(--ink-soft); margin: 0 0 40px; font-family: 'IBM Plex Mono', monospace; }
+
+  .issue-block {
+    border: 1px solid var(--rule);
+    margin-bottom: 28px;
+    background: #fdfcf9;
+  }
+  .issue-number {
+    background: var(--ink); color: var(--paper); font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px; letter-spacing: 0.08em; padding: 8px 16px; display: flex;
+    justify-content: space-between; align-items: center;
+  }
+  .issue-body { padding: 18px 20px; }
+  .issue-label {
+    font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em;
+    text-transform: uppercase; margin-bottom: 6px; font-weight: 600;
+  }
+  .clause-orig {
+    font-size: 14px; line-height: 1.6; font-style: italic; color: var(--ink-soft);
+    border-left: 3px solid var(--flag); padding: 8px 14px; margin: 0 0 14px; background: rgba(181,69,31,0.05);
+  }
+  .issue-explain { font-size: 14.5px; line-height: 1.65; margin: 0 0 14px; }
+  .clause-fixed {
+    font-size: 14px; line-height: 1.6; color: var(--ink); border-left: 3px solid var(--fix);
+    padding: 8px 14px; margin: 0; background: rgba(46,107,79,0.05);
+  }
+  .tag-flag { color: var(--flag); font-weight: 700; }
+  .tag-fix { color: var(--fix); font-weight: 700; }
+
+  .footer-note {
+    max-width: 900px; margin: 0 auto 60px; font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px; color: var(--ink-soft); text-align: center; padding: 0 24px;
+  }
+
+  @media (max-width: 640px) {
+    .sheet { padding: 40px 24px 60px; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="docket-header">
+    <span>DIVEY SETH — LEGAL WORK PORTFOLIO</span>
+    <span>EXHIBIT B OF 03 · CONTRACT REVIEW &amp; REDLINE</span>
+  </div>
+
+  <div class="sheet">
+    <span class="exhibit-tag">Exhibit B — Contract Review (Issue-Spotting Exercise)</span>
+
+    <div class="caption">
+      <strong>Context:</strong> Assignment completed as part of LawSikho's Contract Drafting Bootcamp. A deliberately flawed Influencer Engagement Agreement was provided for review; the exercise required identifying drafting errors, one-sided or ambiguous terms, and legal risks, and proposing corrected language. Below are nine representative issues identified, with the flawed clause, the reasoning, and the corrected clause for each.
+    </div>
+
+    <h1 class="doc-title">INFLUENCER ENGAGEMENT AGREEMENT</h1>
+    <h2 class="doc-sub">Issue Review — GlowNest Beauty Pvt. Ltd. / Ms. Riya Malhotra (fictional parties, bootcamp exercise)</h2>
+
+    <div class="issue-block">
+      <div class="issue-number"><span>ISSUE 1 — PAYMENT TRIGGER</span><span class="tag-flag">FLAGGED</span></div>
+      <div class="issue-body">
+        <div class="issue-label">Original Clause (3.1)</div>
+        <p class="clause-orig">"...payable upon successful completion of the campaign and subject to the Brand's satisfaction with the deliverables."</p>
+        <p class="issue-explain">"Subject to the Brand's satisfaction" is a subjective, undefined standard. As drafted, the Brand could withhold payment indefinitely simply by claiming dissatisfaction, with no objective benchmark the Influencer could point to. This effectively makes payment discretionary rather than contractual.</p>
+        <div class="issue-label">Corrected Clause (4.1–4.2)</div>
+        <p class="clause-fixed">Fixed fee tied to completion of Deliverables per Schedule A, with a defined Net-30 payment window from invoice date, and a 12% p.a. late-payment interest penalty for delays beyond that window.</p>
+      </div>
+    </div>
+
+    <div class="issue-block">
+      <div class="issue-number"><span>ISSUE 2 — INTELLECTUAL PROPERTY ASSIGNMENT</span><span class="tag-flag">FLAGGED</span></div>
+      <div class="issue-body">
+        <div class="issue-label">Original Clause (4.1)</div>
+        <p class="clause-orig">"All content created by the Influencer... shall be owned by the Brand. The Influencer hereby assigns all rights in such content to the Brand."</p>
+        <p class="issue-explain">Unconditional, unqualified assignment of all rights — with no carve-out allowing the Influencer to use the content in her own portfolio or showreel. For a content creator, portfolio use is standard industry practice and its absence here is a material gap, not just an oversight.</p>
+        <div class="issue-label">Corrected Clause (5.1–5.2)</div>
+        <p class="clause-fixed">Assignment made conditional on receipt of full payment, and the Brand grants back a perpetual, royalty-free license permitting the Influencer to display the content on her own channels and portfolio for self-promotional and archival purposes.</p>
+      </div>
+    </div>
+
+    <div class="issue-block">
+      <div class="issue-number"><span>ISSUE 3 — EXCLUSIVITY / RESTRAINT OF TRADE</span><span class="tag-flag">FLAGGED</span></div>
+      <div class="issue-body">
+        <div class="issue-label">Original Clause (5.1)</div>
+        <p class="clause-orig">"...the Influencer shall not promote any beauty, cosmetics, or personal care brands. This obligation shall survive termination of this Agreement."</p>
+        <p class="issue-explain">Two separate problems: (a) the restriction is not limited to competitors — it bars the Influencer from her entire professional category, and (b) it survives termination with no end date, amounting to an indefinite restraint of trade. Under Indian law, post-termination restraints of this kind are generally unenforceable (Section 27, Indian Contract Act, 1872).</p>
+        <div class="issue-label">Corrected Clause (6.1–6.2)</div>
+        <p class="clause-fixed">Restriction narrowed to a defined list of direct competitors (Schedule B), applies only during the active Term, and expressly dissolves on termination or expiry — no post-term restraint.</p>
+      </div>
+    </div>
+
+    <div class="issue-block">
+      <div class="issue-number"><span>ISSUE 4 — TERMINATION (ONE-SIDED)</span><span class="tag-flag">FLAGGED</span></div>
+      <div class="issue-body">
+        <div class="issue-label">Original Clause (8.1)</div>
+        <p class="clause-orig">"The Brand may terminate this Agreement at any time by providing 7 (seven) days' written notice to the Influencer for any reason whatsoever."</p>
+        <p class="issue-explain">Only the Brand holds a termination-for-convenience right; the Influencer has none. Worse, there is no compensation mechanism if the Brand terminates after the Influencer has already begun work — she could complete most of a campaign and receive nothing.</p>
+        <div class="issue-label">Corrected Clause (9.1–9.2)</div>
+        <p class="clause-fixed">Mutual termination-for-convenience right (15 days' notice, either Party), plus a Kill-Fee provision: if the Brand terminates after work has commenced but before publication, it must pay 50% of the total fee or the pro-rata value of completed milestones, whichever is higher.</p>
+      </div>
+    </div>
+
+    <div class="issue-block">
+      <div class="issue-number"><span>ISSUE 5 — SUBJECTIVE "SOLE OPINION" TERMINATION</span><span class="tag-flag">FLAGGED</span></div>
+      <div class="issue-body">
+        <div class="issue-label">Original Clause (8.2)</div>
+        <p class="clause-orig">"The Brand may terminate this Agreement with immediate effect if, in its sole opinion, the Influencer's conduct... bring[s]... the Brand into disrepute."</p>
+        <p class="issue-explain">"In its sole opinion" gives the Brand unchecked, subjective discretion with no objective standard — effectively an at-will termination dressed up as a morality clause, and it does not specify what happens to fees already earned for published work.</p>
+        <div class="issue-label">Corrected Clause (9.3)</div>
+        <p class="clause-fixed">Reframed around an objective standard — material breach must remain uncured for 7 days before termination for cause; the morality-linked termination is limited to conduct causing "widespread public disrepute," and payment is expressly preserved for content already published.</p>
+      </div>
+    </div>
+
+    <div class="issue-block">
+      <div class="issue-number"><span>ISSUE 6 — INDEMNITY SCOPE</span><span class="tag-flag">FLAGGED</span></div>
+      <div class="issue-body">
+        <div class="issue-label">Original Clause (9.1)</div>
+        <p class="clause-orig">"The Influencer agrees to indemnify... the Brand harmless from any and all claims, damages, losses... arising out of or in connection with the Influencer's performance... or any third-party claims arising from the content."</p>
+        <p class="issue-explain">"Any and all claims... arising from the content" is broad enough to capture claims that have nothing to do with the Influencer's fault — for example, a product-liability claim arising from a genuine defect in the Brand's own serum, which she would have no way to prevent or control.</p>
+        <div class="issue-label">Corrected Clause (10.1–10.2)</div>
+        <p class="clause-fixed">Indemnity narrowed to losses arising from her own breach of IP warranties or advertising-law violations, with an express carve-out excluding claims arising from the Brand's product defects or the Brand's own written instructions.</p>
+      </div>
+    </div>
+
+    <div class="issue-block">
+      <div class="issue-number"><span>ISSUE 7 — LOPSIDED LIABILITY CAP</span><span class="tag-flag">FLAGGED</span></div>
+      <div class="issue-body">
+        <div class="issue-label">Original Clause (10.1)</div>
+        <p class="clause-orig">"...the Brand's total liability under this Agreement shall not exceed INR 50,000."</p>
+        <p class="issue-explain">Only the Brand's liability is capped, and at a token amount (roughly 11% of the total fee), while the Influencer's liability under the broad indemnity clause (Issue 6) is left completely uncapped — a significant imbalance given she is the individual, lower-resourced party in this relationship.</p>
+        <div class="issue-label">Corrected Clause (11.1)</div>
+        <p class="clause-fixed">Mutual liability cap for both Parties, set at the full contract value (INR 4,50,000), with a carve-out for gross negligence or wilful misconduct — symmetrical protection instead of one-sided.</p>
+      </div>
+    </div>
+
+    <div class="issue-block">
+      <div class="issue-number"><span>ISSUE 8 — EVERGREEN AUTO-RENEWAL</span><span class="tag-flag">FLAGGED</span></div>
+      <div class="issue-body">
+        <div class="issue-label">Original Clause (2.1)</div>
+        <p class="clause-orig">"This Agreement shall be valid for a period of three (3) months... and shall stand renewed for further periods unless terminated in accordance with the provisions hereof."</p>
+        <p class="issue-explain">Automatic evergreen renewal with no opt-in step could trap the Influencer in successive renewal periods without a fresh negotiation on fees or scope, especially given the Brand's unilateral termination right (Issue 4) was the only real exit mechanism in the flawed draft.</p>
+        <div class="issue-label">Corrected Clause (3.1–3.2)</div>
+        <p class="clause-fixed">Fixed 3-month Term with automatic expiry (no evergreen renewal); any extension requires mutual written consent executed at least 15 days before the Term ends.</p>
+      </div>
+    </div>
+
+    <div class="issue-block">
+      <div class="issue-number"><span>ISSUE 9 — ONE-SIDED CONFIDENTIALITY</span><span class="tag-flag">FLAGGED</span></div>
+      <div class="issue-body">
+        <div class="issue-label">Original Clause (6.1)</div>
+        <p class="clause-orig">"The Influencer shall keep all information shared by the Brand confidential and shall not disclose the same to any third party."</p>
+        <p class="issue-explain">Confidentiality obligations run only one way, and there are no standard carve-outs (publicly available information, legally compelled disclosure) — meaning the Influencer would technically be bound even by information later required to be disclosed by law.</p>
+        <div class="issue-label">Corrected Clause (8.1–8.2)</div>
+        <p class="clause-fixed">Confidentiality obligation made mutual, and standard exceptions added for information that becomes public through no fault of the receiving Party, or that must be disclosed under a court or government order (with prompt notice to allow a protective order to be sought).</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-note">
+    Divey Seth · Law Graduate (LL.B.) · sethdivey1@gmail.com · Bootcamp exercise; fictional parties. Prepared to demonstrate contract review, issue-spotting, and drafting correction skills.
+  </div>
+
+</body>
+</html>
