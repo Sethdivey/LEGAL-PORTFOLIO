@@ -4,135 +4,65 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Divey Seth — Legal Work Portfolio</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600;700&display=swap');
-
-  :root {
-    --paper: #f7f5f0;
-    --ink: #1c1c1a;
-    --ink-soft: #4a4a45;
-    --rule: #c9c4b8;
-    --stamp: #8a2e2e;
-    --margin-note: #6b6558;
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: #e9e6de; font-family: 'IBM Plex Serif', serif; color: var(--ink); }
-
-  .docket-header {
-    background: var(--ink); color: var(--paper); font-family: 'IBM Plex Mono', monospace;
-    padding: 18px 24px; display: flex; justify-content: space-between; align-items: center;
-    flex-wrap: wrap; gap: 8px; font-size: 13px; letter-spacing: 0.04em;
-  }
-
-  .sheet {
-    max-width: 780px; margin: 40px auto 80px; background: var(--paper);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.15), 0 12px 40px rgba(0,0,0,0.12);
-    padding: 72px 64px 80px;
-  }
-
-  h1.name { text-align: center; font-size: 34px; letter-spacing: 0.02em; margin: 0 0 6px; font-weight: 700; }
-  h2.role { text-align: center; font-size: 17px; font-weight: 400; color: var(--ink-soft); margin: 0 0 20px; }
-  .contact {
-    text-align: center; font-family: 'IBM Plex Mono', monospace; font-size: 13px;
-    color: var(--ink-soft); margin: 0 0 48px;
-  }
-  .contact a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--rule); }
-
-  .index-title {
-    font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.12em;
-    text-transform: uppercase; color: var(--margin-note); border-bottom: 1px solid var(--rule);
-    padding-bottom: 10px; margin-bottom: 30px;
-  }
-
-  .exhibit-card {
-    display: block; text-decoration: none; color: inherit;
-    border: 1px solid var(--rule); background: #fdfcf9;
-    padding: 20px 24px; margin-bottom: 20px;
-    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
-  }
-  .exhibit-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-    border-color: var(--stamp);
-  }
-  .exhibit-tag {
-    font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em;
-    text-transform: uppercase; color: var(--stamp); font-weight: 700; margin-bottom: 6px;
-  }
-  .exhibit-name { font-size: 18px; font-weight: 700; margin: 0 0 8px; }
-  .exhibit-desc { font-size: 14.5px; line-height: 1.6; color: var(--ink-soft); margin: 0; }
-  .arrow { float: right; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: var(--margin-note); }
-
-  .note {
-    font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--ink-soft);
-    margin-top: 40px; line-height: 1.6; border-left: 3px solid var(--rule); padding-left: 16px;
-  }
-
-  .footer-note {
-    max-width: 780px; margin: 0 auto 60px; font-family: 'IBM Plex Mono', monospace;
-    font-size: 12px; color: var(--ink-soft); text-align: center; padding: 0 24px;
-  }
-
-  @media (max-width: 640px) {
-    .sheet { padding: 48px 24px 60px; }
-    h1.name { font-size: 26px; }
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="docket-header">
-    <span>DIVEY SETH — LEGAL WORK PORTFOLIO</span>
-    <span>4 EXHIBITS · CONTRACT DRAFTING &amp; REVIEW</span>
-  </div>
+<h1>DIVEY SETH</h1>
+<h2 class="role">Law Graduate (LL.B.) · Data Privacy &amp; Compliance | Corporate Law &amp; Legal Operations</h2>
+<div class="contact">
+  Paschim Vihar, Delhi-110063 | +91 7982819264 |
+  <a href="mailto:sethdivey1@gmail.com">sethdivey1@gmail.com</a> |
+  <a href="https://linkedin.com/in/diveyseth">LinkedIn</a>
+</div>
 
-  <div class="sheet">
-    <h1 class="name">DIVEY SETH</h1>
-    <h2 class="role">Law Graduate (LL.B.) · Corporate Law &amp; Legal Operations</h2>
-    <div class="contact">
-      Paschim Vihar, Delhi-110063 &nbsp;|&nbsp; +91 7982819264 &nbsp;|&nbsp;
-      <a href="mailto:sethdivey1@gmail.com">sethdivey1@gmail.com</a> &nbsp;|&nbsp;
-      <a href="https://linkedin.com/in/diveyseth" target="_blank">LinkedIn</a>
-    </div>
+<div class="section-block featured">
+  <span class="section-label">Featured Specialization</span>
+  <h3>Data Privacy &amp; DPDP Act Compliance</h3>
+  <p class="section-intro">A connected case study applying the Digital Personal Data Protection Act, 2023 to a real business — not a hypothetical exercise. Covers risk assessment, incident response, and consent architecture design.</p>
 
-    <div class="index-title">Index of Exhibits</div>
+  <a class="exhibit" href="dpdp/index.html">
+    <span class="exhibit-tag">Full Case Study →</span>
+    <div class="exhibit-title">DPDP Act Compliance Portfolio — Ornamiint</div>
+    <div class="exhibit-desc">Three connected work products — a Data Protection Impact Assessment, a Breach Notification SOP, and a Consent Management Framework — applied to a real D2C business.</div>
+  </a>
+</div>
 
-    <a class="exhibit-card" href="exhibit-a.html">
-      <span class="arrow">→</span>
-      <div class="exhibit-tag">Exhibit A · Contract Drafting</div>
-      <div class="exhibit-name">Mutual Non-Disclosure Agreement</div>
-      <p class="exhibit-desc">Original commercial contract drafted clause-by-clause across all 10 standard sections — parties, recitals, confidentiality definition, exclusions, obligations, term, return/destruction, remedies, governing law, and miscellaneous.</p>
-    </a>
+<div class="section-block">
+  <span class="section-label" style="background:#6b6b6b;">General Legal Practice</span>
+  <h3>Contract Drafting &amp; Review</h3>
+  <p class="section-intro">Original drafting, issue-spotting, and litigation work samples across commercial contracts, litigation pleadings, and regulatory review.</p>
 
-    <a class="exhibit-card" href="exhibit-b.html">
-      <span class="arrow">→</span>
-      <div class="exhibit-tag">Exhibit B · Contract Review</div>
-      <div class="exhibit-name">Contract Review &amp; Issue-Spotting</div>
-      <p class="exhibit-desc">Review of a flawed Influencer Engagement Agreement — nine issues identified across payment terms, IP assignment, restraint of trade, one-sided termination, indemnity scope, liability caps, auto-renewal, and confidentiality, with corrected clauses proposed for each.</p>
-    </a>
+  <a class="exhibit" href="exhibit-a.html">
+    <span class="exhibit-tag">Exhibit A · Contract Drafting</span>
+    <div class="exhibit-title">Mutual Non-Disclosure Agreement</div>
+    <div class="exhibit-desc">Original commercial contract drafted clause-by-clause across all 10 standard sections.</div>
+  </a>
+  <a class="exhibit" href="exhibit-b.html">
+    <span class="exhibit-tag">Exhibit B · Contract Review</span>
+    <div class="exhibit-title">Contract Review &amp; Issue-Spotting</div>
+    <div class="exhibit-desc">Review of a flawed Influencer Engagement Agreement — nine issues identified with corrected clauses proposed for each.</div>
+  </a>
+  <a class="exhibit" href="exhibit-c.html">
+    <span class="exhibit-tag">Exhibit C · Litigation Drafting</span>
+    <div class="exhibit-title">Litigation Plaint</div>
+    <div class="exhibit-desc">Suit for Ejectment and Recovery of Mesne Profits, drafted from a formbook precedent with an original tenancy fact pattern.</div>
+  </a>
+  <a class="exhibit" href="exhibit-d.html">
+    <span class="exhibit-tag">Exhibit D · Regulatory Review</span>
+    <div class="exhibit-title">Privacy Policy Compliance Review</div>
+    <div class="exhibit-desc">Independent regulatory review of a live, publicly published privacy policy (Tulua) — five compliance issues identified against Indian data protection law.</div>
+  </a>
+  <a class="exhibit" href="exhibit-e.html">
+    <span class="exhibit-tag">Exhibit E · Corporate / M&amp;A</span>
+    <div class="exhibit-title">Corporate Due Diligence — Mock M&amp;A Report</div>
+    <div class="exhibit-desc">A 10-issue buyer-side due diligence report for a fictional acquisition — cap table, secured debt, IP ownership, regulatory, customer/supplier concentration, litigation, and key-person risk, each converted into a concrete transaction protection.</div>
+  </a>
+</div>
 
-    <a class="exhibit-card" href="exhibit-c.html">
-      <span class="arrow">→</span>
-      <div class="exhibit-tag">Exhibit C · Litigation Drafting</div>
-      <div class="exhibit-name">Litigation Plaint</div>
-      <p class="exhibit-desc">Suit for Ejectment and Recovery of Mesne Profits, drafted from a formbook precedent with an original tenancy fact pattern — covers cause of action, suit valuation, relief drafting, and verification.</p>
-    </a>
-
-    <a class="exhibit-card" href="exhibit-d.html">
-      <span class="arrow">→</span>
-      <div class="exhibit-tag">Exhibit D · Regulatory Review</div>
-      <div class="exhibit-name">Privacy Policy Compliance Review</div>
-      <p class="exhibit-desc">Independent regulatory review of a live, publicly published privacy policy (Tulua, a Shark Tank India-featured D2C brand) — five real compliance issues identified, including gaps against Indian data protection law (DPDPA, 2023 and IT Rules, 2011).</p>
-    </a>
-
-    <div class="note">
-      Note: Exhibits A, B, and C use fictional parties and facts for demonstration purposes. Exhibit D reviews a real, publicly available privacy policy.
-    </div>
-  </div>
-
-  <div class="footer-note">
-    Prepared as a portfolio of legal drafting and review work samples.
-  </div>
+<p class="note">
+  Note: Exhibits A, B, and C use fictional parties and facts for demonstration purposes. Exhibit D reviews a real, publicly available privacy policy. The DPDP Compliance Portfolio applies the Act to a real business the author co-founded and operated.
+</p>
 
 </body>
 </html>
