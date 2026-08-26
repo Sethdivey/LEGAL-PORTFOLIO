@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exhibit 1 — DPIA | Divey Seth</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<a class="back-link" href="index.html">← Back to DPDP Compliance Portfolio</a>
+
+<h1>Data Protection Impact Assessment (DPIA)</h1>
+<h2 class="role">Ornamiint — Real Business Assessment under the DPDP Act, 2023 &amp; DPDP Rules, 2025</h2>
+
+<div class="doc-meta">
+  <div><b>Entity Assessed:</b> Ornamiint — online artificial jewellery business (Instagram + Amazon Smart Biz website)</div>
+  <div><b>Applicable Law:</b> Digital Personal Data Protection Act, 2023; DPDP Rules, 2025</div>
+  <div><b>Nature of this Document:</b> A real, applied DPIA — assessing an actual business the author co-ran with his sister</div>
+</div>
+
+<h4 class="part">PART A — PROCESSING OVERVIEW</h4>
+<table>
+<tr><th>Data</th><th>Collected via</th><th>Purpose</th><th>Shared with</th><th>Retention</th></tr>
+<tr><td>Instagram handle, DM messages</td><td>Instagram</td><td>Order coordination, communication</td><td>Meta (platform infrastructure)</td><td>Indefinite — never manually cleared</td></tr>
+<tr><td>Contact number + order label</td><td>WhatsApp Business</td><td>Repeat-customer ID, order updates</td><td>Meta (platform infrastructure)</td><td>Indefinite — never cleared, just labelled</td></tr>
+<tr><td>Shipping address</td><td>Amazon Smart Biz website</td><td>Delivery</td><td>India Post (courier)</td><td>Monthly (platform-managed)</td></tr>
+<tr><td>Payment ID, name, Gmail address</td><td>Razorpay (checkout)</td><td>Payment processing</td><td>Razorpay (payment processor)</td><td>Unknown — not yet verified</td></tr>
+</table>
+<p><i>Key observation: the same customer's identity is fragmented across four separate platforms with no unifying record, and two of those platforms retain data indefinitely by default with no active review process.</i></p>
+
+<h4 class="part">PART B — LEGAL BASIS &amp; NECESSITY</h4>
+<table>
+<tr><th>Data</th><th>Legal basis in practice</th><th>Gap identified</th></tr>
+<tr><td>Shipping address / order details</td><td>Implied consent — customer voluntarily completed checkout by clicking "Place Order"</td><td>No explicit, purpose-specific consent notice or visible Privacy Policy in the checkout flow (verified via live checkout review)</td></tr>
+<tr><td>WhatsApp contact + label</td><td>Implied consent — customer voluntarily initiated the conversation</td><td>No purpose-specific consent for indefinite retention as a tagged "customer"</td></tr>
+<tr><td>Instagram handle / DMs</td><td>Implied consent — customer voluntarily messaged</td><td>Same as above — no defined retention boundary</td></tr>
+<tr><td>Razorpay payment data</td><td>Necessary for transaction completion; governed additionally by Razorpay's own terms as processor</td><td>Retention period not verified against Razorpay's merchant agreement</td></tr>
+</table>
+<p><b>Positive finding:</b> Ornamiint never reused a customer's retained contact information for unrelated marketing or promotional messaging — purpose limitation was respected in practice, even though it was never formalized as a written policy.</p>
+
+<h4 class="part">PART C — RISK REGISTER</h4>
+<table>
+<tr><th>Risk</th><th>Likelihood</th><th>Impact</th><th>Rating</th><th>Recommended Control</th></tr>
+<tr><td>Indefinite retention of customer numbers/handles on WhatsApp &amp; Instagram</td><td>High</td><td>Medium</td><td>Medium</td><td>Define a retention/review schedule — review and archive inactive customer threads after 12 months</td></tr>
+<tr><td>No consent notice / Privacy Policy visible at checkout</td><td>High</td><td>Medium</td><td>Medium</td><td>Add a purpose-specific consent line and a linked Privacy Policy to the checkout flow</td></tr>
+<tr><td>Fragmented customer data across 4 platforms, no unified view</td><td>Medium</td><td>Medium</td><td>Medium</td><td>Maintain a simple internal log cross-referencing a customer's records across platforms</td></tr>
+<tr><td>Unverified Razorpay data retention period</td><td>Low</td><td>Medium</td><td>Low-Medium</td><td>Review Razorpay's merchant/DPA terms directly</td></tr>
+</table>
+
+<h4 class="part">PART D — DATA PRINCIPAL RIGHTS IMPACT</h4>
+<p><b>Scenario tested:</b> a past customer requests "what data do you have on me, and I want it deleted."</p>
+<p>Ornamiint would currently struggle to fulfil this cleanly — it could delete the Instagram thread and the WhatsApp label individually, but has no reliable way to verify nothing was missed, since the same customer's data was never cross-referenced across platforms. Recommendation: a minimum-viable internal customer log recording which platforms hold each customer's data.</p>
+
+<h4 class="part">PART E — CROSS-BORDER TRANSFER ASSESSMENT</h4>
+<p>Direct transfers: Razorpay (Indian, RBI-regulated) and India Post (domestic courier) — no direct cross-border transfer occurs through Ornamiint's own choices. Indirect consideration: Instagram and WhatsApp are operated by Meta (US-headquartered), whose global infrastructure may process data outside India as standard platform operation — worth reviewing as a Processor relationship if the business scales.</p>
+
+<h4 class="part">PART F — MITIGATION ACTION PLAN</h4>
+<table>
+<tr><th>Action</th><th>Owner</th><th>Target</th></tr>
+<tr><td>Add a purpose-specific consent line + linked Privacy Policy at checkout</td><td>Business owner</td><td>Immediate</td></tr>
+<tr><td>Define and apply a retention/review schedule for WhatsApp &amp; Instagram data</td><td>Business owner</td><td>Near-term</td></tr>
+<tr><td>Verify Razorpay's data retention terms via merchant agreement</td><td>Business owner</td><td>Immediate</td></tr>
+<tr><td>Build a simple centralized customer data log across platforms</td><td>Business owner</td><td>Near-term</td></tr>
+</table>
+
+<p class="note">Full document (with Significant Data Fiduciary check and sign-off page) available on request as a formatted Word document.</p>
+
+</body>
+</html>
